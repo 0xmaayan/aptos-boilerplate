@@ -10,6 +10,6 @@
     "move:publish": "export $(cat .env | xargs) && aptos move publish --package-dir move --skip-fetch-latest-git-deps --named-addresses module_addr=$(./scripts/get_module_addr.sh) --profile=$VITE_APP_NETWORK && ./scripts/gen_abi.sh"
   },
   "devDependencies": {
-    "aptos-cli": "git+https://github.com/aptos-labs/cad-aptos-cli.git"
+    "@aptos-labs/aptos-cli": "latest"
   }
 }
