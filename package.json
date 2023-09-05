@@ -2,8 +2,8 @@
   "name": "aptos-dapp-boilerplate",
   "version": "0.0.0",
   "scripts": {
-    "postinstall": "cd frontend && pnpm install",
-    "start": "export $(cat .env | xargs) && cd frontend && pnpm run dev",
+    "postinstall": "cd frontend && npm install",
+    "start": "export $(cat .env | xargs) && cd frontend && npm run dev",
     "move:init": "export $(cat .env | xargs) && aptos init --network=$VITE_APP_NETWORK --profile=$VITE_APP_NETWORK",
     "move:compile": "export $(cat .env | xargs) && aptos move compile --package-dir move --skip-fetch-latest-git-deps --named-addresses module_addr=$(./scripts/get_module_addr.sh)",
     "move:test": "export $(cat .env | xargs) && aptos move test --package-dir move --skip-fetch-latest-git-deps --named-addresses module_addr=$(./scripts/get_module_addr.sh)",
