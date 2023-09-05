@@ -1,13 +1,12 @@
 import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
-import "./style.css";
 import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
-import logo from "./logo.png";
+import logo from "./assets/aptos.png";
 
 function App() {
   return (
     <>
       <div className="navbar">
-        <div className="navbar-text">My App</div>
+        <div className="navbar-text">Create Aptos Dapp</div>
         <div>
           <WalletSelector />
         </div>
